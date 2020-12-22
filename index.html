@@ -13,6 +13,22 @@
     <script type="text/javascript">
         function sendEmail() {
             Email.send({
+            Host : "mail.bbsbys.com",
+            Username : "valeria.garcia@bbsbys.com",
+            Password : "V4l3ri4*GAc&88s#",
+            To : 'rafael.trejo@bbsbys.com',
+            From : "valeria.garcia@bbsbys.com",
+            Subject : "Contacto Página WEB",
+            Body : "And this is the body"
+        }).then(
+        message => alert(message)
+        );
+        }
+    </script>
+
+    <!--script type="text/javascript">
+        function sendEmail() {
+            Email.send({
             Host : "smtp.gmail.com",
             Username : "integrabmc@gmail.com",
             Password : "xqicgrnklpccexhf",
@@ -24,6 +40,7 @@
         message => alert(message)
         );
         }
-    </script>
+    </script-->
+
 </body>
 </html>
