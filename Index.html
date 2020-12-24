@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Contacto</title>
+    <link rel="stylesheet" href="estilos_contacto.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400, 800, 900" rel="stylesheet">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+    <section class="body-contacto">
+        <form method="POST" class="contact-form">
+            <div class="form">
+                <h1>Contactanos</h1>
+                <div class="grupo">
+                    <input type="text" name="name" id="name" required><span class="name"></span>
+                    <label>Nombre</label>
+                </div>
+                <div class="grupo">
+                    <input type="email" name="email" id="email" required><span class="email"></span>
+                    <label>Email</label>
+                </div>
+
+                <div class="grupo">
+                    <input type="number" name="phone" id="phone" required><span class="phone"></span>
+                    <label>Phone Number</label>
+                </div>
+                
+                <div class="grupo">
+                    <label>Selecciona tu Estado:</label>
+    
+                    <select name="estado" id="estado" required><span class="barra"></span>
+                        <option value=""></option>
+                        <option value="">Aguascalientes</option>
+                        <option value="">Baja California Norte</option>
+                        <option value="">Baja California Sur</option>
+                        <option value="">Campeche</option>
+                        <option value="">Coahuila</option>
+                        <option value="">Colima</option>
+                        <option value="">Chiapas</option>
+                        <option value="">Chihuahua</option>
+                        <option value="">CDMX</option>
+                        <option value="">Durango</option>
+                        <option value="">Estado de México</option>
+                        <option value="">Guanajuato</option>
+                        <option value="">Guerrero</option>
+                        <option value="">Hidalgo</option>
+                        <option value="">Jalisco</option>
+                        <option value="">Michoacan</option>
+                        <option value="">Morelos</option>
+                        <option value="">Nayarit</option>
+                        <option value="">Nuevo León</option>
+                        <option value="">Oaxaca</option>
+                        <option value="">Puebla</option>
+                        <option value="">Querétaro</option>
+                        <option value="">Quintana Roo</option>
+                        <option value="">San Luis Potosí</option>
+                        <option value="">Sinaloa</option>
+                        <option value="">Sonora</option>
+                        <option value="">Tabasco</option>
+                        <option value="">Tamaulipas</option>
+                        <option value="">Tlaxcala</option>
+                        <option value="">Veracruz</option>
+                        <option value="">Yucatán</option>
+                        <option value="">Zacatecas</option>
+                    </select>
+                    
+                    
+                    
+                    <!--div class="ubicacion">
+                                          
+        
+    
+                    </div-->
+                    
+                </div>
+                <div class="grupo">
+                    <input type="text" name="empresa" id="sector" required><span class="barra"></span>
+                    <label>Nombre / Giro de tu Empresa:</label>
+                </div>
+                
+                <div class="grupo">
+                    <input type="text" name="asunto" id="matter" required><span class="barra"></span>
+                    <label>Asunto:</label>
+                </div>
+                <div class="grupo">
+                    <textarea name="message" id="message" rows="3" required></textarea><span class="message"></span>
+                    <label>Platìcanos de tu Proyecto:</label>
+                </div>  
+                <button type="submit" onclick="">Enviar</button>
+    
+            </div>
+        </form>
+
+    </section>
+
+    <script src="main.js"></script>
+
+
+</body>
+</html>
