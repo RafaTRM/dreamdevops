@@ -36,17 +36,17 @@ function sendEmail(name, email, phone, message, subject, sector, county) {
     Body: `Name: ${name} <br/> Email: ${email} <br/> phone: ${phone} <br/> Estado: ${county} <br/> Asunto: ${subject} <br/> Empresa - Sector: ${sector} <br/> Message: ${message}`
     
     
-}).then ((message) => alert("Su mensaje se envió correctamente. Gracias por ponerse en contacto con nosotros, pronto nos pondremos en contacto con Usted.")
+}).then ((message) => alert("Su mensaje se envió correctamente. Gracias por ponerse escribirnos, pronto nos pondremos en contacto con Usted.")
 );
+    clearInputFields(name, email, phone, message, subject, sector, county);
 }
 
-/*
-(function(response){
-    if (response == 'ok') {
-        alert("Su mensaje se envió correctamente. Gracias por ponerse en contacto con nosotros, pronto nos pondremos en contacto con Usted.");
-    } else {
-        throw new Error("Error: su mensaje no pudo enviarse");
-    }
-});
+function clearInputFields() {
+    document.getElementById("name").value = '';
+    document.getElementById("email").value = '';
+    document.getElementById("phone").value = '';
+    document.getElementById("estado").value = '';
+    document.getElementById("message").value = '';
+    document.getElementById("matter").value = '';
+    document.getElementById("sector").value = '';
 }
-*/
